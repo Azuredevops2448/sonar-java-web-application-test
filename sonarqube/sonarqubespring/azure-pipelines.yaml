@@ -1,8 +1,8 @@
 trigger:
-- none
+- dev
 
 pool:
-  name: Pool_Name
+  vmImage: ubuntu-latest
 
 steps:
 
