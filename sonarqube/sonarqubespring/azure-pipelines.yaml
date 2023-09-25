@@ -25,11 +25,14 @@ steps:
     mavenPomFile: '$(Build.SourcesDirectory)/sonarqube/sonarqubespring/pom.xml'
     goals: 'clean package'
     publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    codeCoverageToolOption: 'Cobertura'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: true
+    sqMavenPluginVersionChoice: 'pom'
   enabled: true
 
  
